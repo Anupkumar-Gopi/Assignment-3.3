@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<title>Session 3: Assignment 3.3 | Design Forms in CSS</title>
+<link rel="stylesheet"  href="css/custom.css" type="text/css"></link>
+</head>
+<body>
+	<form name="ccForm" action="" method="get">
+	<div id="wrapper">	
+		<p>Step 1: Your details</p>
+		<div><span class="label"><label for="fullName">Name</label></span>
+		<span><input type="text" placeholder="First and Last name" id="fullName"/></span></div>
+		<div><span class="label"><label for="email">Email</label></span>
+		<span><input type="text" placeholder="example@domain.com" id="email"/></span></div>
+		<div><span class="label"><label for="phone">Phone</label></span>
+		<span><input type="text" placeholder="eg: +4475000000" id="phone"/></span></div>
+		<p>Step 2: Delivery address</p>
+		<div><span class="label" style="vertical-align:top"><label for="addr">Address</label></span>
+		<span><textarea id="addr" rows="5"></textarea></span></div>
+		<div><span class="label"><label for="zipCode">Post code</label></span>
+		<span><input type="text" id="zipCode"/></span></div>		
+		<div><span class="label"><label for="country">Country</label></span>
+		<span><input type="text" id="country"/></span></div>		
+		<p>Step 3: Card details</p>
+		<div><span class="label"><label>Card Type</label></span><br/>
+		<span class="cardSelect"><input type="radio" name="ctype" id="visa"/>
+		<label for="visa" id="visaL">&nbsp;<span>Visa</span></label></span>
+		<span class="cardSelect"><input type="radio" name="ctype" id="pay"/>
+		<label for="pay" id="payL">&nbsp;<span>PayPal</span></label></span>
+		<span class="cardSelect"><input type="radio" name="ctype" id="master"/>
+		<label for="master" id="masterL">&nbsp;<span>MasterCard</span></label></span></div>	
+		<div><span class="label"><label for="cardNo">Card number</label></span>
+		<span><input type="text" id="cardNo"/></span></div>	
+		<div><span class="label"><label for="secCode">Security code</label></span>
+		<span><input type="text" id="secCode"/></span></div>	
+		<div><span class="label"><label for="cardName">Name on the card</label></span>
+		<span><input type="text" placeholder="exact name as on the card" id="cardName"/></span></div>	
+		<p style="text-align:center"><button type="submit" value="Buy" id="submit">Buy It!</button></p>			
+	</div>
+	</form>
+</body>
+</html>
